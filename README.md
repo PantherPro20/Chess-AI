@@ -39,14 +39,25 @@ This will install `python-chess` (for the chess rules) and `PyTorch` (for the en
 
 ### Step 3: Play a Game!
 
-You can't play against the engine in the terminal. Instead, you need a special program called a **chess GUI**. A great free one is called **Arena**.
+You can't play against the engine in the terminal. Instead, you need a special program called a **chess GUI** (which stands for Graphical User Interface). Our engine uses a standard way of communicating called **UCI**, so it will work with almost any modern chess GUI.
 
-1.  **Download Arena** (it's free!).
-2.  Open Arena and go to **Engines > Install New Engine**.
-3.  Find the `main.py` file in the code you downloaded. Arena will ask you to configure the engine. Make sure it knows to use `python` to run it.
-4.  Once the engine is loaded, you can start a new game and play against it!
+Some popular free options are:
+*   **Tarrasch GUI**
+*   **Arena**
+*   **Cute Chess**
 
-When you want to play, run this command in your terminal:
+The steps to set it up are similar for all of them:
+
+1.  **Download and install** your favorite chess GUI.
+2.  Open the GUI and look for a menu option like **"Engines"** or **"Tools"**.
+3.  Choose the option to **"Install New Engine"** or **"Create Engine"**.
+4.  When it asks for the engine's location, you'll need to tell it how to run our engine. The command to run is `python main.py`. Some GUIs might ask you for the command and the working directory separately.
+    *   **Command:** `python`
+    *   **Arguments:** `main.py`
+    *   **Working Directory:** The folder where you downloaded the code.
+5.  Once the engine is loaded, you can start a new game and play against it!
+
+When you're ready to play, run this command in your terminal before starting the game in the GUI:
 
 ```bash
 python main.py play
